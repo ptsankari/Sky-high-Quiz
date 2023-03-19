@@ -148,7 +148,7 @@ font-size: 15px;
                     <div id="choises3" style="width:250px;height:150px;text-align: justify;">
                     <p style="border-radius: 20px;width: fit-content;"><input type="radio" value="circular" name="ques3">circular</input></p>
                     <p style="border-radius: 20px;"><input type="radio" value="elliptical" name="ques3">elliptical</input></p>
-                    <p style="border-radius: 20px;"><input type="radio" value=" spiral" name="ques3"> spiral</input></p>
+                    <p style="border-radius: 20px;"><input type="radio" value="spiral" name="ques3"> spiral</input></p>
                     <p style="border-radius: 20px;"> <input type="radio" value="None of the above" name="ques3">None of the above</input></p>
                     </div>
                     </div>
@@ -159,10 +159,31 @@ font-size: 15px;
                 &nbsp;<input type="button" onclick="testfunction4()" value=">" class="buttondiv2">
                     <h6 id="viewthree"></h6>
                     </div>
-       
-                    <center><input type="button" onclick="first()" value="SUBMIT" class="buttondiv"></input>
-                        <h6 id="correctt"></h6></center>
+    
+                   
                         
+                        <div id="question_4" style="border:solid;width:370px;background-color:whitesmoke;
+                        border-color:whitesmoke;display:none;height: 400px;">  
+                            <h5>5.The different colours of different stars are due to the variation of:</h5>
+                            <div id="vline" style=" border-left: 8px solid whitesmoke;height:150px;">
+                            <div id="choises" style="width:250px;height:150px;text-align: justify;">
+                            <p style="border-radius: 20px;"> <input type="radio" value="temperature" name="ques4"> Temperature</input></p>
+                            <p style="border-radius: 20px;"><input type="radio" value="pressure" name="ques4">Pressure</input></p>
+                           <p style="border-radius: 20px;"><input type="radio" value="density" name="ques4">Density</input></p>
+                           <p style="border-radius: 20px;"><input type="radio" value=" radiation from them" name="ques4"> Radiation from them</input></p>
+                        </div>
+                            </div>
+                            <br>
+                <br>
+                <br>
+                            <input type="button" onclick="prevfunction3()" value="<" class="buttondiv2">&nbsp;
+                            &nbsp;<input type="button" onclick="testfunction5()" value=">" class="buttondiv2">
+                        </h6>
+                           <br><br>
+                                <center><input type="button" onclick="first()" value="SUBMIT" class="buttondiv"></input>
+                                    <h6 id="correctt"></h6></center>
+                                    </div>
+                                    
     
      </form>
     
@@ -197,13 +218,25 @@ function prevfunction2(){
     var Y= document.getElementById("question_3");
     Y.style.display = "none"; 
 }
-
+function testfunction4() {
+    var T = document.getElementById("question_4");
+    T.style.display = "block";
+    var O= document.getElementById("question_3");
+    O.style.display = "none";  
+}
+function prevfunction3(){
+    var P=document.getElementById("question_4");
+    P.style.display="none";
+    var A= document.getElementById("question_3");
+    A.style.display = "block"; 
+}
             function first(){
                var ques1=document.quiz.ques1.value;
                var ques2=document.quiz.ques2.value;
                var ques3=document.quiz.ques3.value;
+               var ques4=document.quiz.ques4.value;
                
-               var correct=0;
+               var correct=1;
 
                if(ques1=="xml"){
                 correct++;
@@ -215,7 +248,9 @@ function prevfunction2(){
                if(ques3=="spiral"){
                 correct++;
                }
-               
+               if(ques4=="temperature"){
+                correct++;
+               }
                document.getElementById("correctt").innerHTML="You got "+correct+" points";
 
 
@@ -236,6 +271,6 @@ function prevfunction2(){
 
         </script>
 
-       </script>
+      
 </body>
 </html>
