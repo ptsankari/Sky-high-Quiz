@@ -6,69 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main  page</title>
 </head>
+
+<style>
+body{
+background-color:white;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+p{
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+color:black;
+height: 25px;
+font-size:18px;
+}
+
+h4{
+                
+color:black;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+width:300px;
+height: 30px;
+text-align: center;
+font-size: 40px;
+}
+
+            h5{
+                font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+
+            .buttondiv{
+                font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+                font-size: 15px;
+                background-color:white;
+                border-color:black;
+                border-radius: 5px;
+                color:black;
+                width:130px;
+                height:30px;
+                text-align:center;
+            
+
+            }
+
+h6{
+color:black;
+font-size:20px;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+                
+}
+            
+      .buttondiv2{
+        font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-size: 15px;
+                background-color:white;
+                border-color:black;
+                border-radius: 20px;
+                color:black;
+                width:30px;
+                height:30px;
+                text-align:center;
+
+            
+      }
+</style>
+
 <body>
-    
-
-
     <center>
-        <form id="quiz" name="quiz">
+        <form id="quiz" name="quiz" style="padding-top: 70px;">
        
-           <div id="question_1" style="border:solid;width:350px;background-color:whitesmoke;border-color:whitesmoke;">  
-       <h5>Which is not a fruit?</h5>
+           <div id="question_1" style="border:solid;width:370px;background-color:whitesmoke;border-color:whitesmoke;height:400px;">  
+       <h5>1.Web services components are written in which Markup Language?</h5>
        <div id="vline" style=" border-left: 8px solid whitesmoke;height:150px;">
        <div id="choises" style="width:250px;height:150px;text-align: justify;">
-       <p style="border-radius: 20px;"> <input type="radio" value="apple" name="ques1">Apple</input></p>
-       <p style="border-radius: 20px;"><input type="radio" value="watermelon" name="ques1">Watermelom</input></p>
-      <p style="border-radius: 20px;"><input type="radio" value="cabbage" name="ques1">Cabbage</input></p>
-      <p style="border-radius: 20px;"><input type="radio" value="banana" name="ques1">Banana</input></p>
+       <p style="border-radius: 20px;"> <input type="radio" value="html" name="ques1">HTML</input></p>
+       <p style="border-radius: 20px;"><input type="radio" value="xhtml" name="ques1">XHTML</input></p>
+      <p style="border-radius: 20px;"><input type="radio" value="xml" name="ques1">XML</input></p>
+      <p style="border-radius: 20px;"><input type="radio" value="dtd" name="ques1">DTD</input></p>
    </div>
        </div>
        
-      <h6><input type="button" onclick="view()" value="View answer" class="buttondiv"></input>
+      
        &nbsp;<input type="button" onclick="testfunction()" value=">" class="buttondiv2">
-   </h6>
-       <h6 id="viewone"></h6>
-        
+   
+       
                </div>
              
 
     
-    <div id="question_2" style="border:solid;width:350px;background-color:whitesmoke;border-color:whitesmoke;display: none;">
-    <h5>Which colour is more radiant?</h5>
-    <div id="vline" style=" border-left: 8px solid whitesmoke;height:150px;">
-    <div id="choises2" style="width:250px;height:150px;text-align: justify;">
+               <div id="question_2" style="border:solid;width:370px;background-color:whitesmoke;border-color:whitesmoke;
+               display: none;height:400px;">
+                <h5>3.The instrument that measures and records the relative humidity of air is:
+            </h5>
+                <div id="vline" style=" border-left: 8px solid whitesmoke;height:150px;">
+                <div id="choises2" style="width:250px;height:150px;text-align: justify;">
+            
+                   <p style="border-radius: 20px;"><input type="radio" value="Hydrometer" name="ques2"> Hydrometer</input></p>
+                   <p style="border-radius: 20px;"><input type="radio" value="Hygrometer" name="ques2"> Hygrometer</input></p>
+                   <p style="border-radius: 20px;"><input type="radio" value="Lactometer" name="ques2"> Lactometer</input></p>
+                   <p style="border-radius: 20px;"><input type="radio" value="Barometer" name="ques2"> Barometer</input></p>
+                </div>
+                </div>
+                   <br>
+                   <br>
+                   <br>
+                   <input type="button" onclick="prevfunction()" value="<" class="buttondiv2">&nbsp;
+                   &nbsp;<input type="button" onclick="testfunction3()" value=">" class="buttondiv2">
+                       <h6 id="viewtwo"></h6>
+                       
+                   </div>
 
-       <p style="border-radius: 20px;"><input type="radio" value="Red" name="ques2">Red</input></p>
-       <p style="border-radius: 20px;"><input type="radio" value="White" name="ques2">White</input></p>
-       <p style="border-radius: 20px;"><input type="radio" value="Black" name="ques2">Black</input></p>
-       <p style="border-radius: 20px;"><input type="radio" value="Pink" name="ques2">Pink</input></p>
-    </div>
-    </div>
-       <br>
-       <br>
-       <br>
-       <input type="button" onclick="prevfunction()" value="<" class="buttondiv2">&nbsp;<input type="button" onclick="view2()" value="View answer" class="buttondiv"></input>
-       &nbsp;<input type="button" onclick="testfunction3()" value=">" class="buttondiv2">
-           <h6 id="viewtwo"></h6>
-           
-       </div>
-       <div id="question_3" style="border:solid;width:350px;background-color:whitesmoke;border-color:whitesmoke;display: none;">
-        <h5>Entomology is the science that studies?</h5>
-        <div id="vline" style=" border-left: 8px solid whitesmoke;height:150px;">
-        <div id="choises3" style="width:250px;height:150px;text-align: justify;">
-        <p style="border-radius: 20px;width: fit-content;"><input type="radio" value="rock" name="ques3">The formation of rocks</input></p>
-        <p style="border-radius: 20px;"><input type="radio" value="inse" name="ques3">Insects</input></p>
-        <p style="border-radius: 20px;"><input type="radio" value="Planets" name="ques3">Planets</input></p>
-        <p style="border-radius: 20px;"> <input type="radio" value="History" name="ques3">History</input></p>
-        </div>
-        </div>
-    <br>
-    <br>
-    <br>
-    <input type="button" onclick="prevfunction2()" value="<" class="buttondiv2">&nbsp;
-    <input type="button" onclick="view3()" value="View answer" class="buttondiv"></input>
-        <h6 id="viewthree"></h6>
-        </div>
+
+
+
+                   <div id="question_3" style="border:solid;width:370px;
+                   height:400px;background-color:whitesmoke;border-color:whitesmoke;display: none;">
+                    <h5>4.The shape of our milky way galaxy is:
+            </h5>
+                    <div id="vline" style=" border-left: 8px solid whitesmoke;height:150px;">
+                    <div id="choises3" style="width:250px;height:150px;text-align: justify;">
+                    <p style="border-radius: 20px;width: fit-content;"><input type="radio" value="circular" name="ques3">circular</input></p>
+                    <p style="border-radius: 20px;"><input type="radio" value="elliptical" name="ques3">elliptical</input></p>
+                    <p style="border-radius: 20px;"><input type="radio" value=" spiral" name="ques3"> spiral</input></p>
+                    <p style="border-radius: 20px;"> <input type="radio" value="None of the above" name="ques3">None of the above</input></p>
+                    </div>
+                    </div>
+                <br>
+                <br>
+                <br>
+                <input type="button" onclick="prevfunction2()" value="<" class="buttondiv2">&nbsp;
+                &nbsp;<input type="button" onclick="testfunction4()" value=">" class="buttondiv2">
+                    <h6 id="viewthree"></h6>
+                    </div>
        
             
     
@@ -89,7 +178,7 @@ function testfunction3() {
     var T = document.getElementById("question_3");
     T.style.display = "block";
     var O= document.getElementById("question_2");
-    O.style.display = "none";  // <-- Set it to block
+    O.style.display = "none";  
 }
 
 function prevfunction(){
@@ -113,14 +202,14 @@ function prevfunction2(){
                
                var correct=0;
 
-               if(ques1=="cabbage"){
+               if(ques1=="xml"){
                 correct++;
                }
               
-               if(ques2=="Red"){
+               if(ques2=="Hygrometer"){
                 correct++;
                }
-               if(ques3=="inse"){
+               if(ques3=="spiral"){
                 correct++;
                }
                
@@ -128,18 +217,7 @@ function prevfunction2(){
 
 
             }
-            function view(){
-                document.getElementById("viewone").innerHTML="Cabbage";
-
-               }
-
-               function view2(){
-                document.getElementById("viewtwo").innerHTML="Red";
-
-               }
-               function view3(){
-                document.getElementById("viewthree").innerHTML="Insects";
-               }
+            
 
                function img(){
                 document.getElementById('image')

@@ -49,12 +49,23 @@ background-size: cover;
 background-position: center;
 
 }
+section{
+  display: grid;
 
+ }
+.hidden{
+    opacity: 0;
+    transition:all 5s;
+  }
+
+.show{
+  opacity: 1;
+}
 
 </style>
 <body>
     <div class="bg-image">
-
+<section class="hidden">
    <h1>Sample Quiz</h1>
    <h2>This test contains 15 questions<br> And each question has a time limit</h2>
    <br>
@@ -63,7 +74,24 @@ background-position: center;
         <input type="button" value="Start Quiz" id="mainbutton"></input>
     </a>
 </div>
+</section>
    </div>
-   
+<script>
+    const observer=new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+      console.log(entry)
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+        else{
+          entry.target.classList.remove('show');
+        }
+      });
+});
+ 
+
+  const hiddenElements=document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el)=>observer.observe(el));
+</script>
 </body>
 </html>
